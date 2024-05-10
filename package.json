@@ -10,9 +10,9 @@
     "node": ">=16"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 13379",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 13379",
     "deploy": "vercel deploy",
     "deps": "run-s deps:*",
     "deps:update": "[ -z $GITHUB_ACTIONS ] && yarn add notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
